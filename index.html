@@ -2,28 +2,27 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script>
-    <script src="js/app.js"></script>
-    <script src="js/controllers/signup.js"> </script>
-    <style>
-    #top {
-        width: 50%;
-        margin: 2% 75% 2% 25%;
-    }
-    
-    #copyright {
-        text-align: center;
-    }
-    </style>
+ 
 </head>
 
-<body ng-app="myApp">
-	    <h3 id="top"> Midterm Registration </h3>
-    <div class="container">
-        <div ng-view></div>
-    </div>
+<body >
+<button md-icon-button [mdMenuTriggerFor]="menu">
+  <md-icon>more_vert</md-icon>
+</button>
+<md-menu #menu="mdMenu">
+  <button md-menu-item>
+    <md-icon>dialpad</md-icon>
+    <span>Redial</span>
+  </button>
+  <button md-menu-item disabled>
+    <md-icon>voicemail</md-icon>
+    <span>Check voicemail</span>
+  </button>
+  <button md-menu-item>
+    <md-icon>notifications_off</md-icon>
+    <span>Disable alerts</span>
+  </button>
+</md-menu>
 </body>
 
 </html>
