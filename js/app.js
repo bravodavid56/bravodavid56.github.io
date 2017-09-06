@@ -18,7 +18,4 @@ angular
             redirectTo: '/'
         })
 }])
-    .config(function($mdThemingProvider) {
-        $mdThemingProvider.theme('default')
-        .dark();
-    })
+    
