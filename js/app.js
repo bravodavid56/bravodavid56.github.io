@@ -1,5 +1,5 @@
 angular
-    .module("myApp", ["ngRoute", "SignupCtrl"])
+    .module("myApp", ["ngRoute", "SignupCtrl", "ngMaterial"])
     .config(['$routeProvider', function($routeProvider) {
     $routeProvider
         .when("/", {
@@ -18,3 +18,7 @@ angular
             redirectTo: '/'
         })
 }])
+    .config(function($mdThemingProvider) {
+        $mdThemingProvider.theme('default')
+        .dark();
+    })
