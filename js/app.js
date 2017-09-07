@@ -18,4 +18,19 @@ angular
             redirectTo: '/'
         })
 }])
+    .config(function ($mdThemingProvider, $mdIconProvider) {
+        $mdThemingProvider.theme('forest')
+            .primaryPalette('brown')
+            .accentPalette('green');
+    })
+    .directive('userCard', function() {
+        return {
+            restrict: 'E',
+            controller: function ($scope) {
+                $scope.theme = $scope.theme || 'default';
+            }
+        }
+    })
+    ;
+
     
