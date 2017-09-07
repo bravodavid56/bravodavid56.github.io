@@ -3,12 +3,18 @@ angular
     .config(['$routeProvider', function($routeProvider) {
     $routeProvider
         .when("/", {
-            templateUrl: "views/main.html",
+            template: "<p> hey check </p>",
             controller: 'MainController'
         })
-        .when("/signup", {
-            templateUrl: "views/signup.html",
-            controller: 'SignupController'
+        .when("/aboutme", {
+            templateUrl: "views/aboutme.html"
+            // need a controller
+        })
+        .when("/projects", {
+            templateUrl: "views/projects.html"
+        })
+        .when("/contact", {
+            templateUrl: "views/contact.html"
         })
         .when("/main", {
             templateUrl: "views/main.html",
@@ -18,19 +24,5 @@ angular
             redirectTo: '/'
         })
 }])
-    .config(function ($mdThemingProvider, $mdIconProvider) {
-        $mdThemingProvider.theme('forest')
-            .primaryPalette('brown')
-            .accentPalette('green');
-    })
-    .directive('userCard', function() {
-        return {
-            restrict: 'E',
-            controller: function ($scope) {
-                $scope.theme = $scope.theme || 'default';
-            }
-        }
-    })
-    ;
 
     
