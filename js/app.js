@@ -22,8 +22,8 @@ angular
     .config(function($mdThemingProvider) {
         $mdThemingProvider.theme('default')
             .primaryPalette('blue-grey')
-            .accentPalette('amber')
-            .dark();
+            .accentPalette('amber');
+            
            
     })
     .directive('renderMe', function() {

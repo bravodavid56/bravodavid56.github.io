@@ -28,46 +28,29 @@
 </head>
 
 <body ng-app="myApp">
-    <h3 id="top"> Dave Bravo-Ruelas </h3>
     <div class="container">
-        <!-- <div ng-view></div> -->
+        <div layout="column">
+            <div flex>
+                    <h3 id="top"> Dave Bravo-Ruelas </h3>
+            </div>
+            <!--  -->
+            <!-- Tab Bar -->
+            <div flex>
+                <md-tabs md-dynamic-height md-border-bottom class="md-primary md-hue-2">
+                    <md-tab label="about me">
+                        <render-me> </render-me>
+                    </md-tab>
+                    <md-tab label="projects">
+                        <render-projects> </render-projects>
+                    </md-tab>
+                    <md-tab label="contact">
+                        <render-contact> </render-contact>
+                    </md-tab>
+                </md-tabs>
+            </div>
+            <!-- <md-button> hey </md-button> -->
+        </div>
     </div>
-    <!-- Nav Bar -->
-    <!-- <div class="container">
-        <md-content class="md-padding">
-            <md-nav-bar md-no-ink-bar="disableIntBar" md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
-                <md-nav-item md-nav-href="#aboutme" name="aboutme">
-                    About me
-                </md-nav-item>
-                <md-nav-item md-nav-href="#projects" name="projects">
-                    Projects
-                </md-nav-item>
-                <md-nav-item md-nav-href="#contact" name="contact">
-                    Contact
-                </md-nav-item>
-            </md-nav-bar>
-            <div ng-view></div>
-            <md-divider> </md-divider>
-        </md-content>
-    </div> -->
-
-
-
-
-
-    <!-- Tab Bar -->
-    <md-tabs md-dynamic-height md-border-bottom class="md-primary md-hue-2">
-        <md-tab label="about me">
-            <render-me> </render-me>
-        </md-tab>
-        <md-tab label="projects">
-            <render-projects> </render-projects>
-        </md-tab>
-        <md-tab label="contact">
-        <render-contact> </render-contact>
-        </md-tab>
-    </md-tabs>
-    <!-- <md-button> hey </md-button> -->
 </body>
 
 </html>
