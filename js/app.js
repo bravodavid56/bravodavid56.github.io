@@ -21,8 +21,8 @@ angular
     }])
     .config(function($mdThemingProvider) {
         $mdThemingProvider.theme('default')
-            .primaryPalette('blue-grey')
-            .accentPalette('amber');
+            .primaryPalette('blue-grey', {'default':'800'})
+            .accentPalette('lime', {'default':'400'});
             
            
     })

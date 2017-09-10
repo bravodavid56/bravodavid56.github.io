@@ -15,28 +15,43 @@
     <script type="text/javascript">
     angular.element(document.getElementsByTagName('head')).append(angular.element('<base href="' + window.location.pathname + '" />'));
     </script>
-    <style>
-    #top {
-        width: 50%;
-        margin: 2% 75% 2% 25%;
-    }
+    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
-    #copyright {
-        text-align: center;
+    <style>
+    #app {
+        background-color: #000000;
     }
     </style>
+    
 </head>
 
 <body ng-app="myApp">
     <div class="container">
         <div layout="column">
-            <div flex>
-                    <h3 id="top"> Dave Bravo-Ruelas </h3>
+            <!-- User Card -->
+            <div flex="grow" md-colors="::{background: 'default-accent'}">
+                <md-card md-colors="::{backgroundColor: 'default-primary'}">
+                    <md-card md-colors="::{backgroundColor: 'default-accent'}">
+                    <md-card md-colors="::{backgroundColor: 'default-primary'}">
+                    <md-card-title>
+                        <md-card-title-media>
+                            <div class="md-media-sm card-media" layout md-colors="::{background: 'default-accent'}">
+                            </div>
+                        </md-card-title-media>
+                        <md-card-title-text layout="row" layout-align="end end">
+                            <span class="md-headline"> Dave Bravo-Ruelas </span>
+                        </md-card-title-text>
+                    </md-card-title>
+                </md-card>
+                </md-card>
+                </md-card>
+                <!-- <p>
+                hey waddup
+                </p> -->
             </div>
-            <!--  -->
             <!-- Tab Bar -->
-            <div flex>
-                <md-tabs md-dynamic-height md-border-bottom class="md-primary md-hue-2">
+            <div flex="grow">
+                <md-tabs md-dynamic-height md-border-bottom class="md-primary">
                     <md-tab label="about me">
                         <render-me> </render-me>
                     </md-tab>
