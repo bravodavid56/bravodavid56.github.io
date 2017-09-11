@@ -19,11 +19,13 @@ angular
                 redirectTo: '/'
             })
     }])
-    .config(function($mdThemingProvider) {
+    .config(function($mdThemingProvider, $mdIconProvider) {
         $mdThemingProvider.theme('default')
             .primaryPalette('blue-grey', {'default':'800'})
             .accentPalette('lime', {'default':'400'});
-            
+        
+            $mdIconProvider
+                .defaultIconSet('images/icons/coding.svg', 24);
            
     })
     .directive('renderMe', function() {
@@ -40,4 +42,8 @@ angular
         return {
             templateUrl: 'views/contact.html'
         }
+    })
+    .controller('AppCtrl', function($mdColors) {
+       this.color1 = $mdColors.getThemeColor('primary');
+        this.color2 = $mdColors.getThemeColor('accent');
     })
