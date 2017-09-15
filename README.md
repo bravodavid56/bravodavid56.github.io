@@ -1,6 +1,6 @@
 ### Read me ### 
 
-![picture alt](https://bravodavid56.github.io/images/icons/angular.svg "Angular Logo")
+<img src="https://bravodavid56.github.io/images/icons/angular.svg" width="10%" height="10%" />
 
 This is the repository for the [portfolio](http://bravodavid56.github.io).
 
