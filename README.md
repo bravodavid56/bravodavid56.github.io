@@ -1,8 +1,8 @@
 ### Read me ### 
 
-![picture alt](images/icons/angular "Angular Logo")
+![picture alt](https://bravodavid56.github.io/images/icons/angular.svg "Angular Logo")
 
-This is the repository for the [portfolio](bravodavid56.github.io).
+This is the repository for the [portfolio](http://bravodavid56.github.io).
 
 This site uses __Angular 2__ themed with __Angular Material Design__.
 
