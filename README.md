@@ -1,4 +1,4 @@
-### Read me ### 
+### README ###
 
 <img src="https://bravodavid56.github.io/images/icons/angular.svg" width="10%" height="10%" />
 
@@ -10,4 +10,8 @@ The different tabs correspond to different injected directives, whose views are 
 
 The portfolio is intentionally simple so as not to overwhelm the viewer. Simply put, a portfolio is supposed to showcase a person's work, and I think it achieves this most efficiently with simplicity.
 
-For any questions, feel free to contact me. 
+For any questions, feel free to contact me.
+
+Dave Bravo-Ruelas
+dbravor@calstatela.edu
+323 362 0376
