@@ -1,0 +1,35 @@
+{
+  "name": "bravodavid56.github.io",
+  "version": "2.0.0",
+  "description": "personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next export"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bravodavid56/bravodavid56.github.io.git"
+  },
+  "keywords": [
+    "website"
+  ],
+  "author": "bravodavid56@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bravodavid56/bravodavid56.github.io/issues"
+  },
+  "homepage": "https://github.com/bravodavid56/bravodavid56.github.io#readme",
+  "devDependencies": {
+    "next": "^11.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.4"
+  }
+}
